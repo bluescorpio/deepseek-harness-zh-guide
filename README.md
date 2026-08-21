@@ -3,6 +3,7 @@
 > 发布 2026-08-13 深夜 ｜ 本文写于发布后 24h 内，官方文档尚未补全（文档真空期）
 > 信息核对自 npm 官方包 [`@deepseek-ai/dsh`](https://www.npmjs.com/package/@deepseek-ai/dsh) 与 GitHub 仓库提交记录
 > English TL;DR: DeepSeek open-sourced an MIT-licensed agent runtime ("Everything is a Plugin") that rivals Claude Code / Codex. Verified install + commands below.
+> 英文长文：[DeepSeek Harness: Inside DeepSeek's First Agent Product](https://www.howdoaiagentswork.com/deepseek-harness/)
 
 ---
 
@@ -69,6 +70,7 @@ dsh web
   `dsh.profile.bundles`（按序）→ profile 的 `cordis.patch.yml` → 家目录 `$DSH_HOME/cordis.patch.yml` → `--patch` 覆盖层。
 - 一个 profile 目录含三件套：`package.json`（外加插件依赖）+ `dsh.profile`（manifest，含 `bundles` 列表）+ `cordis.patch.yml`（用户自己的 patch 层）。
 - 想看最终组合结果，用 `--dump-default-config` / `--dump-config`，不用真启动。
+- 插件架构、评测套件、和其他 agent runtime 的对比，见英文长文 [DeepSeek Harness: Inside DeepSeek's First Agent Product](https://www.howdoaiagentswork.com/deepseek-harness/)。
 
 ---
 
@@ -98,4 +100,4 @@ DeepSeek 不满足于只当"被调用的模型"，要抢模型之上的**开发�
 
 ---
 
-*由 Edy 整理 · 更多 AI 工具出海实战见 [howdoaiagentswork.com](https://howdoaiagentswork.com) 与 [xiaohongshudownloader.com](https://xiaohongshudownloader.com)*
+*由 Edy 整理 · 英文解读见 [DeepSeek Harness 长文](https://www.howdoaiagentswork.com/deepseek-harness/) · 更多 AI 工具出海实战见 [howdoaiagentswork.com](https://howdoaiagentswork.com) 与 [xiaohongshudownloader.com](https://xiaohongshudownloader.com)*
